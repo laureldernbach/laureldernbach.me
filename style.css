@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	min-height: 100vh;
+	width: 750px;
+	background: linear-gradient(#431da3, #B89CFF);
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+h1 {
+	color: white;
+	text-align: center;
+}
+p {
+	color:white;
+}
+pright {
+	left: 75%;
+	color: white;
+	display: inline-block;
+}
+img.c {
+  vertical-align: text-top;
+}
+.container {
+    padding: 10px 70px 40px;
+    max-width: 1200px;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    &__image {
+        margin: 20px 30px 20px 20px;
+        width: 200px;
+        object-fit: contain;
+        align-self: flex-start;
+    }
+    &__text {
+        flex: 1 1 auto;
+		left: 50px;
+		
+    }
+}
+.wrapper{
+  left: 50%;
+  position: relative;
+}
+
+.button {
+	display:inline-block;
+	text-align: center;
+	width: 150px;
+	left: 50%;
+	margin-top: 40px;
+	margin-right: 150px;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #FFFFFF;
+	color: #FFFFFF;
+	background-color:#9166FF;
+	transition: all 0.3s linear;
+}
+
+.button:hover {
+	background-color: #FEFEFE;
+	color: #431da3;
+	cursor: pointer;
+} 
+
+.parent {
+  position: relative;
+  top:0%;
+  left: 63%; 
+}
+
+.image1 {
+  position: relative;
+  top: 0%;
+	animation: rotation 15s infinite linear; 
+}
+
+.image2 {
+  position: absolute;
+  top: 0%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  } 
+} 
